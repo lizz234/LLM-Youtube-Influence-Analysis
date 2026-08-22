@@ -1,0 +1,95 @@
+# ==========================================
+# Environments and API Secrets (CRITICAL)
+# ==========================================
+.env
+.env.*
+*.env
+!.env.example
+secrets.json
+credentials.json
+client_secret*.json
+
+# ==========================================
+# Python Bytecode & Build Artifacts
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+.conda/
+
+# ==========================================
+# Jupyter Notebooks & IPython Checkpoints
+# ==========================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.ipython/
+*-checkpoint.ipynb
+
+# ==========================================
+# Temporary Files & MS Office Lock Files
+# ==========================================
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+*.zip
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# IDE & Editor Configurations
+# ==========================================
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.system_generated/
+.gemini/
+
+# ==========================================
+# Logs & Local Cache Data
+# ==========================================
+*.log
+logs/
+data/raw/
+data/cache/
+data/temp/
