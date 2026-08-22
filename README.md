@@ -1,17 +1,8 @@
 # Advertising & Influence Analysis via LLM-Generated Knowledge Graphs from YouTube
 
-<div align="center">
-
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![UC3M Master's Thesis](https://img.shields.io/badge/UC3M-Master's%20Thesis-002147.svg)](https://www.uc3m.es/)
-[![Google Gemini Flash](https://img.shields.io/badge/LLM-Gemini%202.5%20Flash-4285F4.svg)](https://deepmind.google/technologies/gemini/)
-[![NetworkX](https://img.shields.io/badge/Network%20Science-NetworkX%203.2+-orange.svg)](https://networkx.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![LaTeX / Overleaf](https://img.shields.io/badge/Manuscript-LaTeX%20%7C%20Overleaf-47a141.svg)](main.tex)
-
 **A Scalable Computational Framework for Latent Commercial Relationship Extraction, Topological Centrality Modeling, Modularity-Based Sub-Niche Detection, and Information Diffusion Simulation**
 
-*Trabajo de Fin de Máster (Master's Thesis) — Master in Big Data Analytics*  
+*Master's Thesis — Master in Big Data Analytics*  
 **Universidad Carlos III de Madrid (UC3M) — Academic Year 2025/2026**  
 **Author / Researcher:** Aliza Hamid
 
