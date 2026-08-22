@@ -21,7 +21,7 @@
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 Modern influencer marketing on YouTube operates through narrative disclosures, conversational recommendations, and embedded product demonstrations rather than traditional static ads. Because these commercial ties are spoken within video audio, they remain latent and invisible to conventional metadata scrapers.
 
@@ -41,7 +41,7 @@ YouTube Transcripts (ASR) ──► Gemini 2.5 Flash (Pydantic) ──► Direct
 
 ---
 
-## 🏗️ Computational Architecture
+## Computational Architecture
 
 ```mermaid
 flowchart TD
@@ -72,7 +72,7 @@ flowchart TD
 
 ---
 
-## 🏆 Key Empirical Findings
+## Key Empirical Findings
 
 | Metric / Dimension | Finding | Academic & Commercial Implication |
 | :--- | :--- | :--- |
@@ -84,7 +84,7 @@ flowchart TD
 
 ---
 
-## 📊 Scale-Diverse Creator Cohort
+## Scale-Diverse Creator Cohort
 
 The empirical evaluation was conducted across a curated cohort representing four creator tiers:
 
@@ -101,7 +101,7 @@ The empirical evaluation was conducted across a curated cohort representing four
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -147,7 +147,7 @@ The empirical evaluation was conducted across a curated cohort representing four
 
 ---
 
-## 🚀 Quick Start & Reproduction
+## Quick Start & Reproduction
 
 ### 1. Clone the Repository
 ```bash
@@ -198,7 +198,7 @@ python pipeline.py --all --limit-videos 5 --channels channel_ids.txt
 
 ---
 
-## 🌐 Interactive Web Visualization
+## Interactive Web Visualization
 
 To interactively explore the extracted YouTube Knowledge Graph:
 1. Open `interactive_thesis_map.html` directly in any modern web browser (Google Chrome, Firefox, Safari, Edge). No local server required.
@@ -211,7 +211,7 @@ To interactively explore the extracted YouTube Knowledge Graph:
 
 ---
 
-## 📄 Academic Thesis & LaTeX Compilation
+## Academic Thesis & LaTeX Compilation
 
 The complete dissertation manuscript is available in both LaTeX and pre-compiled PDF formats:
 
@@ -229,7 +229,7 @@ pdflatex main.tex
 
 ---
 
-## 📑 BibTeX Citation
+## BibTeX Citation
 
 If you use this computational pipeline, dataset, or methodology in your research, please cite this dissertation:
 
@@ -242,13 +242,13 @@ If you use this computational pipeline, dataset, or methodology in your research
   month        = {September},
   type         = {Master's Thesis},
   address      = {Madrid, Spain},
-  url          = {https://github.com/lizz234/masters-thesis}
+  url          = {https://github.com/lizz234/LLM-Youtube-Influence-Analysis}
 }
 ```
 
 ---
 
-## ⚖️ License & Ethical Disclosure
+## License & Ethical Disclosure
 
 This project is distributed under the **MIT License**.
 
