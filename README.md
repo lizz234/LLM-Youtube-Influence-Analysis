@@ -1,8 +1,10 @@
 # Advertising & Influence Analysis via LLM-Generated Knowledge Graphs from YouTube
 
+<div align="center">
+
 **A Scalable Computational Framework for Latent Commercial Relationship Extraction, Topological Centrality Modeling, Modularity-Based Sub-Niche Detection, and Information Diffusion Simulation**
 
-*Master's Thesis — Master in Big Data Analytics*  
+*Trabajo de Fin de Máster (Master's Thesis) — Master in Big Data Analytics*  
 **Universidad Carlos III de Madrid (UC3M) — Academic Year 2025/2026**  
 **Author / Researcher:** Aliza Hamid
 
@@ -12,7 +14,7 @@
 
 ---
 
-## Executive Summary
+## 📌 Executive Summary
 
 Modern influencer marketing on YouTube operates through narrative disclosures, conversational recommendations, and embedded product demonstrations rather than traditional static ads. Because these commercial ties are spoken within video audio, they remain latent and invisible to conventional metadata scrapers.
 
@@ -25,14 +27,14 @@ YouTube Transcripts (ASR) ──► Gemini 2.5 Flash (Pydantic) ──► Direct
 ### Key Analytical Capabilities:
 * **LLM Zero-Shot Relation Extraction:** Automatically parses video transcripts to extract structured `(Creator, Brand, Relation, Product, Context)` tuples with sentiment classifications (*promotes*, *criticizes*, *mentions*).
 * **View-Weighted Directed Bipartite Graph:** Models the commercial ecosystem as $G = (V_C \cup V_B, E)$, weighting connections by empirical video viewership and sentiment multipliers.
-* **Topological Centrality Modeling:** Computes In/Out-Degree, Eigenvector Centrality (true influence prestige), Betweenness Centrality (structural gatekeepers), and PageRank.
+* **Topological Centrality Modeling:** Computes In/Out-Degree, Eigenvector Centrality (network-based structural prominence), Betweenness Centrality (structural boundary spanners), and PageRank.
 * **Unsupervised Modularity Clustering:** Partitions the network into organic market niches using Louvain community detection ($Q$).
 * **Stochastic Information Diffusion:** Simulates promotional cascade propagation using the Independent Cascade Model (ICM) across Monte Carlo iterations.
 * **Empirical Benchmarking:** Quantifies extraction precision, recall, and F1-score against a hand-annotated ground-truth test suite and a rule-based regex baseline.
 
 ---
 
-## Computational Architecture
+## 🏗️ Computational Architecture
 
 ```mermaid
 flowchart TD
@@ -58,26 +60,26 @@ flowchart TD
 ### Modular Pipeline Stages:
 1. **Data Ingestion (`src/data_extraction.py`):** Interfaces with YouTube Data API v3 and `youtube-transcript-api`. Features local disk caching (`data/raw/<video_id>/`) and exponential backoff.
 2. **Structured LLM Extraction (`src/kg_extraction.py`):** Sends windowed transcripts to Gemini 2.5 Flash using structured Pydantic schemas (`BrandMention`, `ExtractionResult`) for deterministic JSON output.
-3. **Network Science Computation (`src/network_analysis.py`):** Constructs directed bipartite graphs in NetworkX, calculating exposure-weighted degree, eigenvector influence, betweenness bridges, Louvain clusters, and ICM diffusion dynamics.
+3. **Network Science Computation (`src/network_analysis.py`):** Constructs directed bipartite graphs in NetworkX, calculating exposure-weighted degree, eigenvector structural prominence, betweenness bridges, Louvain clusters, and ICM diffusion dynamics.
 4. **Interactive Graph Visualization (`src/kg_visualization.py`):** Renders standalone, interactive Vis.js HTML5 networks (`interactive_thesis_map.html`) and 300 DPI publication plots (`figures/`).
 
 ---
 
-## Key Empirical Findings
+## 🏆 Key Empirical Findings
 
 | Metric / Dimension | Finding | Academic & Commercial Implication |
 | :--- | :--- | :--- |
 | **LLM Extraction Fidelity** | **F1 = 0.902** (Precision: 0.884, Recall: 0.921) vs **F1 = 0.610** for Baseline | **+47.8% relative gain**; robust handling of slang, affiliate mentions, and phonetic transcription errors. |
 | **Topological Degree Distribution** | Heavy-tailed distribution with **$\gamma \approx 1.84$** | Follows power-law characteristics of human social graphs; top hubs capture majority of exposure. |
-| **Eigenvector Centrality vs Reach** | Mid-Tier creators (Dave2D, JayzTwoCents) exhibit disproportionately high prestige | Mid-tier influencers connect high-value sub-graphs (consumer tech + PC hardware) exceeding raw subscriber scale. |
+| **Eigenvector Centrality vs Reach** | Mid-Tier creators (Dave2D, JayzTwoCents) exhibit disproportionately high prominence | Mid-tier influencers connect high-value sub-graphs (consumer tech + PC hardware) exceeding raw subscriber scale. |
 | **Structural Bridging (Betweenness)** | Technical benchmarkers (Gamers Nexus: $C_B = 0.583$) act as critical gatekeepers | Crucial boundary-spanners linking disparate industrial sub-niches that mega-hubs do not bridge. |
 | **Information Diffusion (ICM)** | Distributed Mid-Tier seeding achieves **+28.4% greater reach** than Mega-Hubs | Allocating marketing budgets across multi-creator mid-tier portfolios circumvents local cluster bottlenecks. |
 
 ---
 
-## Scale-Diverse Creator Cohort
+## 📊 Scale-Diverse Creator Cohort
 
-The empirical evaluation was conducted across a curated cohort representing four creator tiers:
+The empirical evaluation was conducted across a curated cohort representing 7 scale-diverse channels ($|V| = 116, |E| = 150$):
 
 | Creator Channel | Tier | Subscribers | Niche Focus | Network Structural Role |
 | :--- | :--- | :--- | :--- | :--- |
@@ -88,11 +90,10 @@ The empirical evaluation was conducted across a curated cohort representing four
 | **Gamers Nexus** | Deep Niche | $\sim 2.2\text{M}$ | Teardowns, Thermals & Investigation | Consumer Advocacy & Benchmark Anchor |
 | **Hardware Unboxed** | Deep Niche | $\sim 1.1\text{M}$ | GPU/CPU Quantitative Benchmarks | Silicon Performance Specialist |
 | **Paul's Hardware** | Mid-Tier | $\sim 1.4\text{M}$ | PC Building Guides & Market Walkthroughs | Buying Advisor & Component Bridge |
-| **Dawid Does Tech Stuff** | Micro Tier | $\sim 450\text{K}$ | Budget Hardware Repairs & Silicon Quirks | Fringe Hardware Specialist |
 
 ---
 
-## Repository Structure
+## 📂 Repository Structure
 
 ```text
 .
@@ -138,7 +139,7 @@ The empirical evaluation was conducted across a curated cohort representing four
 
 ---
 
-## Quick Start & Reproduction
+## 🚀 Quick Start & Reproduction
 
 ### 1. Clone the Repository
 ```bash
@@ -189,7 +190,7 @@ python pipeline.py --all --limit-videos 5 --channels channel_ids.txt
 
 ---
 
-## Interactive Web Visualization
+## 🌐 Interactive Web Visualization
 
 To interactively explore the extracted YouTube Knowledge Graph:
 1. Open `interactive_thesis_map.html` directly in any modern web browser (Google Chrome, Firefox, Safari, Edge). No local server required.
@@ -202,7 +203,7 @@ To interactively explore the extracted YouTube Knowledge Graph:
 
 ---
 
-## Academic Thesis & LaTeX Compilation
+## 📄 Academic Thesis & LaTeX Compilation
 
 The complete dissertation manuscript is available in both LaTeX and pre-compiled PDF formats:
 
@@ -220,7 +221,7 @@ pdflatex main.tex
 
 ---
 
-## BibTeX Citation
+## 📑 BibTeX Citation
 
 If you use this computational pipeline, dataset, or methodology in your research, please cite this dissertation:
 
@@ -233,13 +234,13 @@ If you use this computational pipeline, dataset, or methodology in your research
   month        = {September},
   type         = {Master's Thesis},
   address      = {Madrid, Spain},
-  url          = {https://github.com/lizz234/LLM-Youtube-Influence-Analysis}
+  url          = {https://github.com/lizz234/masters-thesis}
 }
 ```
 
 ---
 
-## License & Ethical Disclosure
+## ⚖️ License & Ethical Disclosure
 
 This project is distributed under the **MIT License**.
 
