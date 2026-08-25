@@ -4,7 +4,7 @@
 
 **A Scalable Computational Framework for Latent Commercial Relationship Extraction, Topological Centrality Modeling, Modularity-Based Sub-Niche Detection, and Information Diffusion Simulation**
 
-*Trabajo de Fin de Máster (Master's Thesis) — Master in Big Data Analytics*  
+*Master's Thesis — Master in Big Data Analytics*  
 **Universidad Carlos III de Madrid (UC3M) — Academic Year 2025/2026**  
 **Author / Researcher:** Aliza Hamid
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 Modern influencer marketing on YouTube operates through narrative disclosures, conversational recommendations, and embedded product demonstrations rather than traditional static ads. Because these commercial ties are spoken within video audio, they remain latent and invisible to conventional metadata scrapers.
 
@@ -34,7 +34,7 @@ YouTube Transcripts (ASR) ──► Gemini 2.5 Flash (Pydantic) ──► Direct
 
 ---
 
-## 🏗️ Computational Architecture
+## Computational Architecture
 
 ```mermaid
 flowchart TD
@@ -65,7 +65,7 @@ flowchart TD
 
 ---
 
-## 🏆 Key Empirical Findings
+## Key Empirical Findings
 
 | Metric / Dimension | Finding | Academic & Commercial Implication |
 | :--- | :--- | :--- |
@@ -77,7 +77,7 @@ flowchart TD
 
 ---
 
-## 📊 Scale-Diverse Creator Cohort
+## Scale-Diverse Creator Cohort
 
 The empirical evaluation was conducted across a curated cohort representing 7 scale-diverse channels ($|V| = 116, |E| = 150$):
 
@@ -93,7 +93,7 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -112,7 +112,6 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 │   └── kg_visualization.py          # Stage 4: Interactive HTML and figure generator
 │
 ├── data/                             # Data directory
-│   ├── raw/                          # Raw video packages (<video_id>/metadata, transcript, comments)
 │   └── processed/                    # Processed datasets and analytics artifacts
 │       ├── thesis_graph_data.json    # Master knowledge graph dataset (nodes & edges)
 │       ├── network_metrics.json      # Centrality metrics (Degree, Eigenvector, Betweenness)
@@ -128,18 +127,12 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 │   ├── diffusion_cascade_curves.png
 │   └── extraction_fidelity_benchmark.png
 │
-├── lib/                              # Frontend web visualizer dependencies (Vis.js, Tom-Select)
-│
-├── main.tex                          # LaTeX source code for the Master's Thesis
-├── references.bib                    # Academic BibTeX bibliography
-├── thesis_overleaf.zip               # Complete Overleaf-ready compilation archive
-├── Masters_Thesis.pdf                # Compiled Master's Thesis document
 └── README.md                         # Project documentation (this file)
 ```
 
 ---
 
-## 🚀 Quick Start & Reproduction
+## Quick Start & Reproduction
 
 ### 1. Clone the Repository
 ```bash
@@ -190,7 +183,7 @@ python pipeline.py --all --limit-videos 5 --channels channel_ids.txt
 
 ---
 
-## 🌐 Interactive Web Visualization
+## Interactive Web Visualization
 
 To interactively explore the extracted YouTube Knowledge Graph:
 1. Open `interactive_thesis_map.html` directly in any modern web browser (Google Chrome, Firefox, Safari, Edge). No local server required.
@@ -203,25 +196,7 @@ To interactively explore the extracted YouTube Knowledge Graph:
 
 ---
 
-## 📄 Academic Thesis & LaTeX Compilation
-
-The complete dissertation manuscript is available in both LaTeX and pre-compiled PDF formats:
-
-* **LaTeX Source:** [main.tex](main.tex) & [references.bib](references.bib)
-* **Pre-Compiled PDF:** [Masters_Thesis.pdf](Masters_Thesis.pdf)
-* **Overleaf Zip:** [thesis_overleaf.zip](thesis_overleaf.zip) (Ready for one-click upload to [Overleaf](https://www.overleaf.com/))
-
-To compile locally using `pdflatex` or `latexmk`:
-```bash
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
-```
-
----
-
-## 📑 BibTeX Citation
+## BibTeX Citation
 
 If you use this computational pipeline, dataset, or methodology in your research, please cite this dissertation:
 
@@ -237,12 +212,4 @@ If you use this computational pipeline, dataset, or methodology in your research
   url          = {https://github.com/lizz234/masters-thesis}
 }
 ```
-
----
-
-## ⚖️ License & Ethical Disclosure
-
-This project is distributed under the **MIT License**.
-
-**Ethical Compliance:** This software collects publicly accessible metadata and subtitles strictly via the YouTube Data API v3 and public ASR endpoints for non-commercial academic research under fair-use and platform guidelines. No private user information or protected media streams are harvested or stored.
 
