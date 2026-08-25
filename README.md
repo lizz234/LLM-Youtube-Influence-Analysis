@@ -1,4 +1,4 @@
-# Advertising & Influence Analysis via LLM-Generated Knowledge Graphs from YouTube
+# Advertising & Influence Analysis via LLM-Generated Graphs from YouTube
 
 <div align="center">
 
