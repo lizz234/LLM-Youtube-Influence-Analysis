@@ -1,10 +1,10 @@
-# Advertising & Influence Analysis via LLM-Generated Graphs from YouTube
+# Advertising and Influence Analysis via LLM-Generated Graphs from YouTube
 
 <div align="center">
 
 **A Scalable Computational Framework for Latent Commercial Relationship Extraction, Topological Centrality Modeling, Modularity-Based Sub-Niche Detection, and Information Diffusion Simulation**
 
-*Master's Thesis — Master in Big Data Analytics*  
+*Trabajo de Fin de Máster (Master's Thesis) — Master in Big Data Analytics*  
 **Universidad Carlos III de Madrid (UC3M) — Academic Year 2025/2026**  
 **Author / Researcher:** Aliza Hamid
 
@@ -70,10 +70,10 @@ flowchart TD
 | Metric / Dimension | Finding | Academic & Commercial Implication |
 | :--- | :--- | :--- |
 | **LLM Extraction Fidelity** | **F1 = 0.902** (Precision: 0.884, Recall: 0.921) vs **F1 = 0.610** for Baseline | **+47.8% relative gain**; robust handling of slang, affiliate mentions, and phonetic transcription errors. |
-| **Topological Degree Distribution** | Heavy-tailed distribution with **$\gamma \approx 1.84$** | Follows power-law characteristics of human social graphs; top hubs capture majority of exposure. |
-| **Eigenvector Centrality vs Reach** | Mid-Tier creators (Dave2D, JayzTwoCents) exhibit disproportionately high prominence | Mid-tier influencers connect high-value sub-graphs (consumer tech + PC hardware) exceeding raw subscriber scale. |
+| **Topological Degree Distribution** | Heavy-tailed distribution with **$\gamma \approx 0.92$** | Follows power-law characteristics of human social graphs; top hubs capture majority of exposure. |
+| **Eigenvector Centrality vs Reach** | Mid-Tier and Technical creators (Gamers Nexus, Dave2D) exhibit high prominence | Mid-tier influencers connect high-value sub-graphs (consumer tech + PC hardware) exceeding raw subscriber scale. |
 | **Structural Bridging (Betweenness)** | Technical benchmarkers (Gamers Nexus: $C_B = 0.583$) act as critical gatekeepers | Crucial boundary-spanners linking disparate industrial sub-niches that mega-hubs do not bridge. |
-| **Information Diffusion (ICM)** | Distributed Mid-Tier seeding achieves **+28.4% greater reach** than Mega-Hubs | Allocating marketing budgets across multi-creator mid-tier portfolios circumvents local cluster bottlenecks. |
+| **Information Diffusion (ICM)** | Distributed Mid-Tier seeding achieves **+28.5% greater reach** than Mega-Hubs | Allocating marketing budgets across multi-creator mid-tier portfolios circumvents local cluster bottlenecks. |
 
 ---
 
@@ -112,6 +112,7 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 │   └── kg_visualization.py          # Stage 4: Interactive HTML and figure generator
 │
 ├── data/                             # Data directory
+│   ├── raw/                          # Raw video packages (<video_id>/metadata, transcript, comments)
 │   └── processed/                    # Processed datasets and analytics artifacts
 │       ├── thesis_graph_data.json    # Master knowledge graph dataset (nodes & edges)
 │       ├── network_metrics.json      # Centrality metrics (Degree, Eigenvector, Betweenness)
@@ -127,6 +128,12 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 │   ├── diffusion_cascade_curves.png
 │   └── extraction_fidelity_benchmark.png
 │
+├── lib/                              # Frontend web visualizer dependencies (Vis.js, Tom-Select)
+│
+├── main.tex                          # LaTeX source code for the Master's Thesis
+├── references.bib                    # Academic BibTeX bibliography
+├── thesis_overleaf.zip               # Complete Overleaf-ready compilation archive
+├── Masters_Thesis.pdf                # Compiled Master's Thesis document
 └── README.md                         # Project documentation (this file)
 ```
 
@@ -196,6 +203,24 @@ To interactively explore the extracted YouTube Knowledge Graph:
 
 ---
 
+## Academic Thesis & LaTeX Compilation
+
+The complete dissertation manuscript is available in both LaTeX and pre-compiled PDF formats:
+
+* **LaTeX Source:** [main.tex](main.tex) & [references.bib](references.bib)
+* **Pre-Compiled PDF:** [Masters_Thesis.pdf](Masters_Thesis.pdf)
+* **Overleaf Zip:** [thesis_overleaf.zip](thesis_overleaf.zip) (Ready for one-click upload to [Overleaf](https://www.overleaf.com/))
+
+To compile locally using `pdflatex` or `latexmk`:
+```bash
+pdflatex main.tex
+bibtex main
+pdflatex main.tex
+pdflatex main.tex
+```
+
+---
+
 ## BibTeX Citation
 
 If you use this computational pipeline, dataset, or methodology in your research, please cite this dissertation:
@@ -212,4 +237,6 @@ If you use this computational pipeline, dataset, or methodology in your research
   url          = {https://github.com/lizz234/masters-thesis}
 }
 ```
+
+---
 
