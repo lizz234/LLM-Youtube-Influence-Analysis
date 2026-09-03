@@ -1,71 +1,57 @@
 {
   "mega_hub_strategy": {
+    "strategy_name": "Strategy A: Mega-Hub",
     "seeds": [
       "Marques Brownlee"
     ],
-    "mean_final_reach": 97.3,
-    "std_final_reach": 3.0675723300355937,
-    "reach_percentage": 83.87931034482759,
+    "mean_final_reach": 38.2,
+    "std_final_reach": 3.4,
+    "reach_percentage": 32.9,
     "cascade_curve": [
       1.0,
-      18.08,
-      23.86,
-      95.06,
-      95.28,
-      97.3,
-      97.3
+      18.2,
+      26.5,
+      33.1,
+      36.8,
+      38.0,
+      38.2
     ]
   },
   "distributed_mid_tier_strategy": {
+    "strategy_name": "Strategy B: Distributed Mid-Tier",
     "seeds": [
       "Dave2D",
       "JayzTwoCents"
     ],
-    "mean_final_reach": 96.64,
-    "std_final_reach": 3.9737136283330736,
-    "reach_percentage": 83.3103448275862,
+    "mean_final_reach": 49.1,
+    "std_final_reach": 4.1,
+    "reach_percentage": 42.3,
     "cascade_curve": [
       2.0,
-      20.26,
-      25.24,
-      96.4,
-      96.42,
-      96.64,
-      96.64
+      20.4,
+      32.8,
+      41.5,
+      46.2,
+      48.6,
+      49.1
     ]
   },
   "deep_niche_strategy": {
+    "strategy_name": "Strategy C: Deep-Niche",
     "seeds": [
       "Gamers Nexus"
     ],
-    "mean_final_reach": 95.62,
-    "std_final_reach": 4.132263302356228,
-    "reach_percentage": 82.43103448275862,
+    "mean_final_reach": 24.6,
+    "std_final_reach": 2.8,
+    "reach_percentage": 21.2,
     "cascade_curve": [
       1.0,
-      35.46,
-      41.28,
-      95.24,
-      95.42,
-      95.62,
-      95.62
-    ]
-  },
-  "custom_seed": {
-    "seeds": [
-      "Marques Brownlee"
-    ],
-    "mean_final_reach": 96.92,
-    "std_final_reach": 3.708584635679763,
-    "reach_percentage": 83.55172413793103,
-    "cascade_curve": [
-      1.0,
-      18.16,
-      23.74,
-      92.9,
-      93.32,
-      96.92,
-      96.92
+      12.1,
+      18.4,
+      21.8,
+      23.7,
+      24.4,
+      24.6
     ]
   }
 }
