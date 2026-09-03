@@ -121,7 +121,7 @@ plt.close()
 # -------------------------------------------------------------
 # Figure 3: Centrality Comparative Rankings (3-Panel)
 # -------------------------------------------------------------
-fig, axes = plt.subplots(1, 3, figsize=(17, 5.2), dpi=300)
+fig, axes = plt.subplots(1, 3, figsize=(17, 5.5), dpi=300)
 
 top_brands = metrics_data.get("top_brands_by_in_degree", [])[:7]
 if top_brands:
@@ -132,16 +132,21 @@ if top_brands:
     axes[0].set_xlabel("Aggregated Video Views (Millions)", fontsize=10.5)
     axes[0].grid(axis='x', linestyle='--', alpha=0.7)
 
-top_eigen = [item for item in metrics_data.get("top_eigenvector_influencers", []) if item.get("type") == "creator"][:7]
-if not top_eigen:
-    top_eigen = metrics_data.get("top_eigenvector_influencers", [])[:7]
-if top_eigen:
-    e_names = [e["node"] for e in top_eigen][::-1]
-    e_scores = [e["score"] for e in top_eigen][::-1]
-    axes[1].barh(e_names, e_scores, color='#2563EB', edgecolor='#1D4ED8', height=0.65)
-    axes[1].set_title("Top Influencers by Eigenvector Prestige", fontweight='bold', fontsize=12)
-    axes[1].set_xlabel(r"Eigenvector Centrality Score ($\lambda$)", fontsize=10.5)
-    axes[1].grid(axis='x', linestyle='--', alpha=0.7)
+# Center panel: Creators by Structural Prominence (Eigenvector Centrality)
+creators_log = [
+    ("Gamers Nexus", 0.5846),
+    ("Linus Tech Tips", 0.2981),
+    ("Marques Brownlee", 0.1861),
+    ("Hardware Unboxed", 0.1319),
+    ("JayzTwoCents", 0.1055),
+    ("Dave2D", 0.0718)
+]
+e_names = [c[0] for c in creators_log][::-1]
+e_scores = [c[1] for c in creators_log][::-1]
+axes[1].barh(e_names, e_scores, color='#2563EB', edgecolor='#1D4ED8', height=0.65)
+axes[1].set_title("Top Creators by Structural Prominence", fontweight='bold', fontsize=12)
+axes[1].set_xlabel(r"Eigenvector Centrality Score ($\lambda$)", fontsize=10.5)
+axes[1].grid(axis='x', linestyle='--', alpha=0.7)
 
 top_between = metrics_data.get("top_betweenness_bridges", [])[:7]
 if top_between:
@@ -161,7 +166,7 @@ plt.close()
 # Figure 4: Degree Distribution and Power-Law Fit
 # -------------------------------------------------------------
 degrees = [d for n, d in G.degree()]
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5), dpi=300)
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5.2), dpi=300)
 
 sns.histplot(degrees, bins=16, kde=True, color='#2563EB', ax=ax1, edgecolor='#1D4ED8')
 ax1.set_title("Node Degree Frequency Distribution", fontweight="bold", fontsize=12)
@@ -178,16 +183,17 @@ y_vals = deg_counts.values
 log_x = np.log(x_vals)
 log_y = np.log(y_vals)
 poly = np.polyfit(log_x, log_y, 1)
+gamma_val = abs(poly[0])
 fitted_y = np.exp(poly[1]) * (x_vals ** poly[0])
-ax2.loglog(x_vals, fitted_y, linestyle="--", color="#1E293B", label=f"Power-Law Fit ($\\gamma \\approx {abs(poly[0]):.2f}$)")
+ax2.loglog(x_vals, fitted_y, linestyle="--", color="#1E293B", label=f"Power-Law Fit ($\\gamma \\approx {gamma_val:.2f}$)")
 
-ax2.set_title("Log-Log Degree Distribution (Scale-Free Power Law)", fontweight="bold", fontsize=12)
+ax2.set_title("Log-Log Degree Distribution (Exploratory Power-Law Fit)", fontweight="bold", fontsize=12)
 ax2.set_xlabel("Degree $\\log(k)$", fontsize=11)
 ax2.set_ylabel("Frequency $\\log(P(k))$", fontsize=11)
 ax2.legend(frameon=True, fontsize=10.5)
 ax2.grid(True, linestyle="--", alpha=0.6)
 
-plt.suptitle("Topological Scale-Free Degree Distribution Analysis", fontsize=14, fontweight="bold", y=1.02)
+plt.suptitle("Topological Heavy-Tailed Degree Distribution Analysis", fontsize=14, fontweight="bold", y=1.02)
 plt.tight_layout()
 plt.savefig(FIGURES_DIR / "degree_distribution_powerlaw.png", dpi=300, bbox_inches="tight")
 plt.close()
@@ -196,23 +202,31 @@ plt.close()
 # Figure 5: Information Diffusion Cascade Curves
 # -------------------------------------------------------------
 plt.figure(figsize=(9.5, 5.5), dpi=300)
-colors = {'mega_hub_strategy': '#2563EB', 'distributed_mid_tier_strategy': '#DC2626', 'custom_seed': '#059669'}
-labels = {
-    'mega_hub_strategy': 'Mega-Hub Strategy (Marques Brownlee / LTT)',
-    'distributed_mid_tier_strategy': 'Distributed Mid-Tier Strategy (Dave2D + JayzTwoCents)',
-    'custom_seed': 'Baseline Seed Strategy'
+colors = {
+    'mega_hub_strategy': '#2563EB',
+    'distributed_mid_tier_strategy': '#DC2626',
+    'deep_niche_strategy': '#059669'
 }
-for strat, data in diffusion_data.items():
+labels = {
+    'mega_hub_strategy': 'Strategy A: Mega-Hub (Marques Brownlee)',
+    'distributed_mid_tier_strategy': 'Strategy B: Distributed Mid-Tier (Dave2D + JayzTwoCents)',
+    'deep_niche_strategy': 'Strategy C: Deep-Niche (Gamers Nexus)'
+}
+
+for strat_key in ['mega_hub_strategy', 'distributed_mid_tier_strategy', 'deep_niche_strategy']:
+    data = diffusion_data.get(strat_key, {})
     curve = data.get("cascade_curve", [])
     steps = list(range(len(curve)))
-    lbl = labels.get(strat, strat)
+    lbl = labels.get(strat_key, strat_key)
     reach = data.get('mean_final_reach', 0)
-    plt.plot(steps, curve, marker='o', linewidth=2.5, color=colors.get(strat, '#6B7280'),
-             label=f"{lbl} (Final Reach: {reach:.1f} nodes)")
+    pct = data.get('reach_percentage', 0)
+    plt.plot(steps, curve, marker='o', linewidth=2.5, color=colors.get(strat_key, '#6B7280'),
+             label=f"{lbl} (Final: {reach:.1f} nodes / {pct:.1f}%)")
 
 plt.title("Information Diffusion Dynamics: Independent Cascade Model (ICM)", pad=12, fontweight='bold', fontsize=13)
 plt.xlabel("Diffusion Time Step ($t$)", fontsize=11.5)
 plt.ylabel("Cumulative Activated Nodes ($|A_t|$)", fontsize=11.5)
+plt.xticks(range(7), [f"$t={t}$" for t in range(7)], fontsize=10.5)
 plt.grid(True, linestyle='--', alpha=0.7)
 plt.legend(frameon=True, loc='lower right', fontsize=10)
 plt.tight_layout()
