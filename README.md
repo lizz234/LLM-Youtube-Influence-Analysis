@@ -130,10 +130,7 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 │
 ├── lib/                              # Frontend web visualizer dependencies (Vis.js, Tom-Select)
 │
-├── main.tex                          # LaTeX source code for the Master's Thesis
 ├── references.bib                    # Academic BibTeX bibliography
-├── thesis_overleaf.zip               # Complete Overleaf-ready compilation archive
-├── Masters_Thesis.pdf                # Compiled Master's Thesis document
 └── README.md                         # Project documentation (this file)
 ```
 
@@ -200,24 +197,6 @@ To interactively explore the extracted YouTube Knowledge Graph:
    * **View-Weighted Edge Thickness:** Visual line thickness proportional to log-scaled audience views.
    * **Interactive Filtering:** Search and isolate specific brands, creators, or sponsorship clusters.
    * **Context Tooltips:** Hover over any directed edge to view empirical view counts and the verbatim textual sponsorship disclosure snippet.
-
----
-
-## Academic Thesis & LaTeX Compilation
-
-The complete dissertation manuscript is available in both LaTeX and pre-compiled PDF formats:
-
-* **LaTeX Source:** [main.tex](main.tex) & [references.bib](references.bib)
-* **Pre-Compiled PDF:** [Masters_Thesis.pdf](Masters_Thesis.pdf)
-* **Overleaf Zip:** [thesis_overleaf.zip](thesis_overleaf.zip) (Ready for one-click upload to [Overleaf](https://www.overleaf.com/))
-
-To compile locally using `pdflatex` or `latexmk`:
-```bash
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
-```
 
 ---
 
