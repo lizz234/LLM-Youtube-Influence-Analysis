@@ -140,7 +140,7 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/lizz234/masters-thesis.git
+git clone https://github.com/lizz234/LLM-Youtube-Influence-Analysis.git
 cd masters-thesis
 ```
 
@@ -207,7 +207,7 @@ If you use this computational pipeline, dataset, or methodology in your research
 ```bibtex
 @mastersthesis{hamid2026advertising,
   author       = {Aliza Hamid},
-  title        = {Advertising and Influence Analysis via Large Language Model--Generated Knowledge Graphs from {YouTube}: A Scalable Computational Framework for Latent Commercial Relationship Extraction, Topological Centrality Modeling, Modularity-Based Sub-Niche Detection, and Information Diffusion Simulation},
+  title        = {Advertising and Influence Analysis via Large Language Model--Generated Graphs from {YouTube}: A Scalable Computational Framework for Latent Commercial Relationship Extraction, Topological Centrality Modeling, Modularity-Based Sub-Niche Detection, and Information Diffusion Simulation},
   school       = {Universidad Carlos III de Madrid (UC3M)},
   year         = {2026},
   month        = {September},
