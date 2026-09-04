@@ -1,0 +1,52 @@
+{
+  "mega_hub_strategy": {
+    "seeds": [
+      "Marques Brownlee"
+    ],
+    "mean_final_reach": 97.1,
+    "std_final_reach": 3.8535697735995385,
+    "reach_percentage": 83.70689655172413,
+    "cascade_curve": [
+      1.0,
+      18.0,
+      23.72,
+      93.76,
+      94.04,
+      97.1,
+      97.1
+    ]
+  },
+  "distributed_mid_tier_strategy": {
+    "seeds": [
+      "Dave2D",
+      "JayzTwoCents"
+    ],
+    "mean_final_reach": 96.54,
+    "std_final_reach": 3.412975241633024,
+    "reach_percentage": 83.22413793103449,
+    "cascade_curve": [
+      2.0,
+      19.98,
+      24.98,
+      96.54,
+      96.54
+    ]
+  },
+  "deep_niche_strategy": {
+    "seeds": [
+      "Gamers Nexus"
+    ],
+    "mean_final_reach": 96.64,
+    "std_final_reach": 3.7189245757342273,
+    "reach_percentage": 83.3103448275862,
+    "cascade_curve": [
+      1.0,
+      36.5,
+      42.28,
+      96.02,
+      96.22,
+      96.64,
+      96.64
+    ]
+  }
+}

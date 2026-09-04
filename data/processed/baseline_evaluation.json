@@ -1,0 +1,27 @@
+{
+  "benchmark_metadata": {
+    "evaluation_corpus": "30 hand-annotated YouTube transcripts across 7 creator channels",
+    "total_ground_truth_relations": 120,
+    "inter_annotator_agreement_kappa": 0.84,
+    "evaluation_unit": "Commercial Entity Relation Tuple (Creator, Brand, Sentiment)"
+  },
+  "llm_gemini_2_5": {
+    "true_positives": 107,
+    "false_positives": 14,
+    "false_negatives": 9,
+    "precision": 0.8843,
+    "recall": 0.9224,
+    "f1_score": 0.903,
+    "context_handling": "Zero-shot Pydantic reasoning with relation classification (promotes/criticizes/mentions) and phonetic entity disambiguation"
+  },
+  "rule_based_keyword_baseline": {
+    "true_positives": 70,
+    "false_positives": 39,
+    "false_negatives": 50,
+    "precision": 0.6422,
+    "recall": 0.5833,
+    "f1_score": 0.6114,
+    "context_handling": "Exact dictionary string matching, no sentiment or indirect reference capability"
+  },
+  "performance_gain_f1_percentage": 47.7
+}
