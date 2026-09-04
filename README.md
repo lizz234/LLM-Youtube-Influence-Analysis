@@ -59,7 +59,7 @@ flowchart TD
 
 ### Modular Pipeline Stages:
 1. **Data Ingestion (`src/data_extraction.py`):** Interfaces with YouTube Data API v3 and `youtube-transcript-api`. Features local disk caching (`data/raw/<video_id>/`) and exponential backoff.
-2. **Structured LLM Extraction (`src/kg_extraction.py`):** Sends windowed transcripts to Gemini 2.5 Flash using structured Pydantic schemas (`BrandMention`, `ExtractionResult`) for deterministic JSON output.
+2. **Structured LLM Extraction (`src/kg_extraction.py`):** Sends windowed transcripts to Gemini 2.5 Flash using structured Pydantic schemas (`BrandMention`, `ExtractionResult`) for schema-constrained JSON output.
 3. **Network Science Computation (`src/network_analysis.py`):** Constructs directed bipartite graphs in NetworkX, calculating exposure-weighted degree, eigenvector structural prominence, betweenness bridges, Louvain clusters, and ICM diffusion dynamics.
 4. **Interactive Graph Visualization (`src/kg_visualization.py`):** Renders standalone, interactive Vis.js HTML5 networks (`interactive_thesis_map.html`) and 300 DPI publication plots (`figures/`).
 
@@ -72,7 +72,7 @@ flowchart TD
 | **LLM Extraction Fidelity** | **F1 = 0.902** (Precision: 0.884, Recall: 0.921) vs **F1 = 0.610** for Baseline | **+47.8% relative gain**; robust handling of slang, affiliate mentions, and phonetic transcription errors. |
 | **Topological Degree Distribution** | Heavy-tailed distribution with **$\gamma \approx 0.92$** | Follows power-law characteristics of human social graphs; top hubs capture majority of exposure. |
 | **Eigenvector Centrality vs Reach** | Mid-Tier and Technical creators (Gamers Nexus, Dave2D) exhibit high prominence | Mid-tier influencers connect high-value sub-graphs (consumer tech + PC hardware) exceeding raw subscriber scale. |
-| **Structural Bridging (Betweenness)** | Technical benchmarkers (Gamers Nexus: $C_B = 0.583$) act as critical gatekeepers | Crucial boundary-spanners linking disparate industrial sub-niches that mega-hubs do not bridge. |
+| **Structural Bridging (Betweenness)** | Technical benchmarkers (Gamers Nexus: $C_B = 0.533$) act as critical gatekeepers | Crucial boundary-spanners linking disparate industrial sub-niches that mega-hubs do not bridge. |
 | **Information Diffusion (ICM)** | Distributed Mid-Tier seeding achieves **+28.5% greater reach** than Mega-Hubs | Allocating marketing budgets across multi-creator mid-tier portfolios circumvents local cluster bottlenecks. |
 
 ---
@@ -128,8 +128,6 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 │   ├── diffusion_cascade_curves.png
 │   └── extraction_fidelity_benchmark.png
 │
-├── lib/                              # Frontend web visualizer dependencies (Vis.js, Tom-Select)
-│
 ├── references.bib                    # Academic BibTeX bibliography
 └── README.md                         # Project documentation (this file)
 ```
@@ -141,7 +139,7 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/lizz234/LLM-Youtube-Influence-Analysis.git
-cd masters-thesis
+cd LLM-Youtube-Influence-Analysis
 ```
 
 ### 2. Set Up Virtual Environment
@@ -200,6 +198,24 @@ To interactively explore the extracted YouTube Knowledge Graph:
 
 ---
 
+## Academic Thesis & LaTeX Compilation
+
+The complete dissertation manuscript is available in both LaTeX and pre-compiled PDF formats:
+
+* **LaTeX Source:** [main.tex](main.tex) & [references.bib](references.bib)
+* **Pre-Compiled PDF:** [Masters_Thesis.pdf](Masters_Thesis.pdf)
+* **Overleaf Zip:** [thesis_overleaf.zip](thesis_overleaf.zip) (Ready for one-click upload to [Overleaf](https://www.overleaf.com/))
+
+To compile locally using `pdflatex` or `latexmk`:
+```bash
+pdflatex main.tex
+bibtex main
+pdflatex main.tex
+pdflatex main.tex
+```
+
+---
+
 ## BibTeX Citation
 
 If you use this computational pipeline, dataset, or methodology in your research, please cite this dissertation:
@@ -207,15 +223,19 @@ If you use this computational pipeline, dataset, or methodology in your research
 ```bibtex
 @mastersthesis{hamid2026advertising,
   author       = {Aliza Hamid},
-  title        = {Advertising and Influence Analysis via Large Language Model--Generated Graphs from {YouTube}: A Scalable Computational Framework for Latent Commercial Relationship Extraction, Topological Centrality Modeling, Modularity-Based Sub-Niche Detection, and Information Diffusion Simulation},
+  title        = {Advertising and Influence Analysis via LLM-Generated Graphs from {YouTube}: A Scalable Computational Framework for Latent Commercial Relationship Extraction, Topological Centrality Modeling, Modularity-Based Sub-Niche Detection, and Information Diffusion Simulation},
   school       = {Universidad Carlos III de Madrid (UC3M)},
   year         = {2026},
   month        = {September},
   type         = {Master's Thesis},
   address      = {Madrid, Spain},
-  url          = {https://github.com/lizz234/masters-thesis}
+  url          = {https://github.com/lizz234/LLM-Youtube-Influence-Analysis}
 }
 ```
 
 ---
+
+This project is distributed under the **MIT License**.
+
+**Ethical Compliance:** This software collects publicly accessible metadata and subtitles strictly via the YouTube Data API v3 and public ASR endpoints for non-commercial academic research under fair-use and platform guidelines. No private user information or protected media streams are harvested or stored.
 
