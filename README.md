@@ -79,7 +79,7 @@ flowchart TD
 
 ## Scale-Diverse Creator Cohort
 
-The empirical evaluation was conducted across a curated cohort representing 7 scale-diverse channels ($|V| = 116, |E| = 150$):
+The empirical evaluation was conducted across a curated cohort representing 7 scale-diverse channels ($|V| = 116, |E| = 148$):
 
 | Creator Channel | Tier | Subscribers | Niche Focus | Network Structural Role |
 | :--- | :--- | :--- | :--- | :--- |
@@ -195,24 +195,6 @@ To interactively explore the extracted YouTube Knowledge Graph:
    * **View-Weighted Edge Thickness:** Visual line thickness proportional to log-scaled audience views.
    * **Interactive Filtering:** Search and isolate specific brands, creators, or sponsorship clusters.
    * **Context Tooltips:** Hover over any directed edge to view empirical view counts and the verbatim textual sponsorship disclosure snippet.
-
----
-
-## Academic Thesis & LaTeX Compilation
-
-The complete dissertation manuscript is available in both LaTeX and pre-compiled PDF formats:
-
-* **LaTeX Source:** [main.tex](main.tex) & [references.bib](references.bib)
-* **Pre-Compiled PDF:** [Masters_Thesis.pdf](Masters_Thesis.pdf)
-* **Overleaf Zip:** [thesis_overleaf.zip](thesis_overleaf.zip) (Ready for one-click upload to [Overleaf](https://www.overleaf.com/))
-
-To compile locally using `pdflatex` or `latexmk`:
-```bash
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
-```
 
 ---
 
