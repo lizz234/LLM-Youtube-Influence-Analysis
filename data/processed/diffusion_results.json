@@ -1,0 +1,63 @@
+{
+  "experiment_metadata": {
+    "model": "Time-Decaying Independent Cascade Model (ICM)",
+    "monte_carlo_trials": 50,
+    "max_steps": 6,
+    "random_seed": 42,
+    "graph_nodes": 115
+  },
+  "results": {
+    "mega_hub_strategy": {
+      "seeds": [
+        "Marques Brownlee"
+      ],
+      "mean_final_reach": 13.2,
+      "std_final_reach": 4.4,
+      "reach_percentage": 11.5,
+      "cascade_curve": [
+        1.0,
+        9.46,
+        10.96,
+        13.16,
+        13.18,
+        13.2,
+        13.2
+      ]
+    },
+    "distributed_mid_tier_strategy": {
+      "seeds": [
+        "Dave2D",
+        "JayzTwoCents"
+      ],
+      "mean_final_reach": 16.0,
+      "std_final_reach": 4.5,
+      "reach_percentage": 13.9,
+      "cascade_curve": [
+        2.0,
+        11.54,
+        13.2,
+        15.88,
+        15.96,
+        15.96,
+        15.96
+      ]
+    },
+    "deep_niche_strategy": {
+      "seeds": [
+        "Gamers Nexus"
+      ],
+      "mean_final_reach": 23.8,
+      "std_final_reach": 4.9,
+      "reach_percentage": 20.7,
+      "cascade_curve": [
+        1.0,
+        18.9,
+        21.1,
+        23.78,
+        23.84,
+        23.84,
+        23.84
+      ]
+    }
+  }
+}
