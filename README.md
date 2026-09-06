@@ -69,27 +69,29 @@ flowchart TD
 
 | Metric / Dimension | Finding | Academic & Commercial Implication |
 | :--- | :--- | :--- |
-| **LLM Extraction Fidelity** | **F1 = 0.902** (Precision: 0.884, Recall: 0.921) vs **F1 = 0.610** for Baseline | **+47.8% relative gain**; robust handling of slang, affiliate mentions, and phonetic transcription errors. |
-| **Topological Degree Distribution** | Heavy-tailed distribution with **$\gamma \approx 0.92$** | Follows power-law characteristics of human social graphs; top hubs capture majority of exposure. |
-| **Eigenvector Centrality vs Reach** | Mid-Tier and Technical creators (Gamers Nexus, Dave2D) exhibit high prominence | Mid-tier influencers connect high-value sub-graphs (consumer tech + PC hardware) exceeding raw subscriber scale. |
-| **Structural Bridging (Betweenness)** | Technical benchmarkers (Gamers Nexus: $C_B = 0.533$) act as critical gatekeepers | Crucial boundary-spanners linking disparate industrial sub-niches that mega-hubs do not bridge. |
-| **Information Diffusion (ICM)** | Distributed Mid-Tier seeding achieves **+28.5% greater reach** than Mega-Hubs | Allocating marketing budgets across multi-creator mid-tier portfolios circumvents local cluster bottlenecks. |
+| **LLM Extraction Fidelity** | **F1 = 0.902** (Precision: 0.887, Recall: 0.917) vs **F1 = 0.611** (Precision: 0.642, Recall: 0.583) for Baseline | **+47.5% relative gain**; robust handling of conversational disclosures, colloquial brand slang, affiliate promo codes, and phonetic ASR transcription errors. |
+| **Topological Degree Distribution** | Heavy-tailed distribution with **$\gamma \approx 0.91$** ($\gamma_{\text{in}} \approx 2.25$ for brand in-degrees) | Exhibits heavy-tailed scale-diverse properties; dominant tech brand hubs (Apple, Google, Oppo, Samsung, dbrand) aggregate the vast majority of exposure. |
+| **Structural Prominence (Eigenvector)** | **Marques Brownlee ($\lambda = 0.7063$)** dominates eigenvector prestige alongside **Apple ($\lambda = 0.6166$)** | Eigenvector centrality reinforces gross exposure within consumer mobile, while Linus Tech Tips ($\lambda = 0.0262$) and Dave2D ($\lambda = 0.0208$) anchor secondary clusters. |
+| **Structural Bridging (Betweenness)** | **Gamers Nexus ($C_B = 0.5311$)** and **Linus Tech Tips ($C_B = 0.3526$)** achieve top betweenness scores | Deep-niche benchmarkers and mid-tier enthusiasts (JayzTwoCents: $C_B = 0.2346$) act as crucial boundary-spanners connecting disparate component manufacturers and consumer niches. |
+| **Information Diffusion (Time-Decaying ICM)** | Distributed Mid-Tier seeding achieves **+21.2% greater reach** ($16.0 \pm 4.5$ vs $13.2 \pm 4.4$ nodes) than Mega-Hubs; Deep-Niche bridges reach **$23.8 \pm 4.9$ nodes (20.7%)** | Multi-seed mid-tier portfolios and high-betweenness structural bridges circumvent single-community saturation bottlenecks under temporal advertising decay ($\lambda_{\text{decay}} = 0.45$). |
+| **Unsupervised Modularity Clustering** | Louvain optimization identifies **3 thematic sub-niches** ($Q = 0.2442$) | Partitions into: (1) Consumer Mobile & Cameras ($16$ nodes), (2) PC Enthusiast Components & Hardware Benchmarking ($74$ nodes), and (3) Platforms, Gaming & Mobile Crossover ($25$ nodes). |
+| **Weighting Sensitivity Analysis** | Top 7 brand rankings are **100% rank-invariant** across baseline, stepped, and uniform weighting | High rank correlation (Baseline vs Stepped: $\tau = 0.908, \rho = 0.984$; Baseline vs Uniform: $\tau = 0.854, \rho = 0.950$) confirms robustness against multiplier assumptions. |
 
 ---
 
 ## Scale-Diverse Creator Cohort
 
-The empirical evaluation was conducted across a curated cohort representing 7 scale-diverse channels ($|V| = 116, |E| = 148$):
+The empirical evaluation was conducted across a curated cohort representing 7 scale-diverse channels ($|V| = 115$ resolved nodes: 7 creators and 108 commercial entities; $|E| = 148$ directed edges from 499 relation records across 17 analyzed videos, $\approx 21\text{M}$ unique-video views):
 
 | Creator Channel | Tier | Subscribers | Niche Focus | Network Structural Role |
 | :--- | :--- | :--- | :--- | :--- |
-| **Marques Brownlee (MKBHD)** | Mega Hub | $> 18.5\text{M}$ | Consumer Tech & Smartphones | Generalist Consumer Anchor |
-| **Linus Tech Tips (LTT)** | Mega Hub | $> 15.8\text{M}$ | PC Hardware, DIY & Tech Culture | Enthusiast Ecosystem Anchor |
-| **Dave2D** | Mid-Tier | $\sim 3.8\text{M}$ | Laptops & Industrial Design | Mobile Hardware Specialist |
-| **JayzTwoCents** | Mid-Tier | $\sim 4.0\text{M}$ | Custom Liquid Cooling & PC Modding | PC Hardware Specialist |
-| **Gamers Nexus** | Deep Niche | $\sim 2.2\text{M}$ | Teardowns, Thermals & Investigation | Consumer Advocacy & Benchmark Anchor |
-| **Hardware Unboxed** | Deep Niche | $\sim 1.1\text{M}$ | GPU/CPU Quantitative Benchmarks | Silicon Performance Specialist |
-| **Paul's Hardware** | Mid-Tier | $\sim 1.4\text{M}$ | PC Building Guides & Market Walkthroughs | Buying Advisor & Component Bridge |
+| **Marques Brownlee (MKBHD)** | Mega Hub | $> 18.5\text{M}$ | Consumer Tech & Smartphones | Generalist Consumer Anchor (Cluster 1) |
+| **Linus Tech Tips (LTT)** | Mega Hub | $> 15.8\text{M}$ | PC Hardware, DIY & Tech Culture | Enthusiast Ecosystem Anchor (Cluster 3) |
+| **Dave2D** | Mid-Tier | $\sim 3.8\text{M}$ | Laptops & Industrial Design | Mobile & Platform Specialist (Cluster 3) |
+| **JayzTwoCents** | Mid-Tier | $\sim 4.0\text{M}$ | Custom Liquid Cooling & PC Modding | PC Hardware Specialist (Cluster 2) |
+| **Gamers Nexus** | Deep Niche | $\sim 2.2\text{M}$ | Teardowns, Thermals & Investigation | Consumer Advocacy & Premier Bridge ($C_B = 0.5311$, Cluster 2) |
+| **Hardware Unboxed** | Deep Niche | $\sim 1.1\text{M}$ | GPU/CPU Quantitative Benchmarks | Silicon Performance Specialist (Cluster 2) |
+| **Paul's Hardware** | Mid-Tier | $\sim 1.4\text{M}$ | PC Building Guides & Market Walkthroughs | Buying Advisor & Component Bridge (Cluster 2) |
 
 ---
 
@@ -112,21 +114,22 @@ The empirical evaluation was conducted across a curated cohort representing 7 sc
 │   └── kg_visualization.py          # Stage 4: Interactive HTML and figure generator
 │
 ├── data/                             # Data directory
-│   ├── raw/                          # Raw video packages (<video_id>/metadata, transcript, comments)
 │   └── processed/                    # Processed datasets and analytics artifacts
 │       ├── thesis_graph_data.json    # Master knowledge graph dataset (nodes & edges)
-│       ├── network_metrics.json      # Centrality metrics (Degree, Eigenvector, Betweenness)
-│       ├── community_clusters.json   # Louvain community partitions
-│       ├── diffusion_results.json    # Monte Carlo ICM cascade curves
-│       └── baseline_evaluation.json  # Benchmark evaluation metrics (Precision, Recall, F1)
+│       ├── network_metrics.json      # Centrality metrics (Degree, Eigenvector, Betweenness, PageRank)
+│       ├── community_clusters.json   # Louvain modularity partitions & cluster members
+│       ├── diffusion_results.json    # Monte Carlo Time-Decaying ICM cascade curves
+│       ├── baseline_evaluation.json  # Benchmark evaluation metrics (Precision, Recall, F1)
+│       ├── sensitivity_analysis.json # Weighting regime sensitivity & rank correlations
+│       └── ground_truth_test_suite.json # Hand-annotated ground-truth validation sample
 │
-├── figures/                          # 300 DPI publication-grade figures
-│   ├── pipeline_architecture_diagram.png
-│   ├── network_topology_overview.png
-│   ├── degree_distribution_powerlaw.png
-│   ├── centrality_rankings.png
-│   ├── diffusion_cascade_curves.png
-│   └── extraction_fidelity_benchmark.png
+├── figures/                          # 300 DPI publication figures (PDF vector & PNG raster)
+│   ├── pipeline_architecture_diagram (.pdf / .png)
+│   ├── network_topology_overview     (.pdf / .png)
+│   ├── degree_distribution_powerlaw  (.pdf / .png)
+│   ├── centrality_rankings           (.pdf / .png)
+│   ├── diffusion_cascade_curves      (.pdf / .png)
+│   └── extraction_fidelity_benchmark (.pdf / .png)
 │
 ├── references.bib                    # Academic BibTeX bibliography
 └── README.md                         # Project documentation (this file)
@@ -216,6 +219,8 @@ If you use this computational pipeline, dataset, or methodology in your research
 ```
 
 ---
+
+## License & Ethical Disclosure
 
 This project is distributed under the **MIT License**.
 
