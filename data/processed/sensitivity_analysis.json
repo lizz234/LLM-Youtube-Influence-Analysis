@@ -1,0 +1,38 @@
+{
+  "top7_baseline": [
+    "Apple",
+    "Google",
+    "Oppo",
+    "Samsung",
+    "dbrand",
+    "Hasselblad",
+    "Nvidia"
+  ],
+  "top7_stepped": [
+    "Apple",
+    "Google",
+    "Oppo",
+    "Samsung",
+    "dbrand",
+    "Hasselblad",
+    "Nvidia"
+  ],
+  "top7_uniform": [
+    "Apple",
+    "Google",
+    "Oppo",
+    "Samsung",
+    "dbrand",
+    "Hasselblad",
+    "Nvidia"
+  ],
+  "top7_ordering_identical": true,
+  "baseline_vs_stepped": {
+    "kendall_tau": 0.913,
+    "spearman_rho": 0.986
+  },
+  "baseline_vs_uniform": {
+    "kendall_tau": 0.861,
+    "spearman_rho": 0.954
+  }
+}

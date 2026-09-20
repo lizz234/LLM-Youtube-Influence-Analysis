@@ -1,0 +1,1472 @@
+{
+  "graph_summary": {
+    "total_nodes": 107,
+    "total_edges": 141,
+    "num_creators": 7,
+    "num_brands": 100,
+    "density": 0.012431669899488627,
+    "is_bipartite": true,
+    "num_connected_components": 1
+  },
+  "top_brands_by_in_degree": [
+    {
+      "node": "Apple",
+      "score": 105648109.0,
+      "type": "brand"
+    },
+    {
+      "node": "Google",
+      "score": 58148016.0,
+      "type": "brand"
+    },
+    {
+      "node": "Oppo",
+      "score": 31254460.0,
+      "type": "brand"
+    },
+    {
+      "node": "Samsung",
+      "score": 19200339.0,
+      "type": "brand"
+    },
+    {
+      "node": "dbrand",
+      "score": 18323914.0,
+      "type": "brand"
+    },
+    {
+      "node": "Hasselblad",
+      "score": 7885761.0,
+      "type": "brand"
+    },
+    {
+      "node": "Nvidia",
+      "score": 5630705.0,
+      "type": "brand"
+    },
+    {
+      "node": "Qualcomm",
+      "score": 5629143.0,
+      "type": "brand"
+    },
+    {
+      "node": "Auto Focus",
+      "score": 5257175.0,
+      "type": "brand"
+    },
+    {
+      "node": "Vivo",
+      "score": 5257174.0,
+      "type": "brand"
+    }
+  ],
+  "top_creators_by_out_degree": [
+    {
+      "node": "Marques Brownlee",
+      "score": 249096110.0,
+      "type": "creator"
+    },
+    {
+      "node": "Linus Tech Tips",
+      "score": 25392163.0,
+      "type": "creator"
+    },
+    {
+      "node": "Dave2D",
+      "score": 16712956.0,
+      "type": "creator"
+    },
+    {
+      "node": "Gamers Nexus",
+      "score": 11282736.0,
+      "type": "creator"
+    },
+    {
+      "node": "Hardware Unboxed",
+      "score": 5480341.0,
+      "type": "creator"
+    },
+    {
+      "node": "JayzTwoCents",
+      "score": 3700310.0,
+      "type": "creator"
+    },
+    {
+      "node": "Paul's Hardware",
+      "score": 1835345.0,
+      "type": "creator"
+    }
+  ],
+  "top_creators_by_eigenvector": [
+    {
+      "node": "Marques Brownlee",
+      "score": 0.7063157612295481,
+      "type": "creator"
+    },
+    {
+      "node": "Linus Tech Tips",
+      "score": 0.026170391806762186,
+      "type": "creator"
+    },
+    {
+      "node": "Dave2D",
+      "score": 0.02080074366667816,
+      "type": "creator"
+    },
+    {
+      "node": "Gamers Nexus",
+      "score": 0.0004899916356660194,
+      "type": "creator"
+    },
+    {
+      "node": "JayzTwoCents",
+      "score": 0.00047159163000749153,
+      "type": "creator"
+    },
+    {
+      "node": "Paul's Hardware",
+      "score": 0.00011114469112207529,
+      "type": "creator"
+    },
+    {
+      "node": "Hardware Unboxed",
+      "score": 0.00010124577622291237,
+      "type": "creator"
+    }
+  ],
+  "top_eigenvector_influencers": [
+    {
+      "node": "Marques Brownlee",
+      "score": 0.7063157612295481,
+      "type": "creator"
+    },
+    {
+      "node": "Apple",
+      "score": 0.6162127165555559,
+      "type": "brand"
+    },
+    {
+      "node": "Google",
+      "score": 0.25715986605492136,
+      "type": "brand"
+    },
+    {
+      "node": "Oppo",
+      "score": 0.18028211252786966,
+      "type": "brand"
+    },
+    {
+      "node": "dbrand",
+      "score": 0.10669768587503889,
+      "type": "brand"
+    },
+    {
+      "node": "Samsung",
+      "score": 0.05530553224969267,
+      "type": "brand"
+    },
+    {
+      "node": "Hasselblad",
+      "score": 0.046704549158551316,
+      "type": "brand"
+    },
+    {
+      "node": "Qualcomm",
+      "score": 0.0333394057927973,
+      "type": "brand"
+    },
+    {
+      "node": "Auto Focus",
+      "score": 0.031136372028344118,
+      "type": "brand"
+    },
+    {
+      "node": "Vivo",
+      "score": 0.03113636610570087,
+      "type": "brand"
+    }
+  ],
+  "top_betweenness_bridges": [
+    {
+      "node": "Gamers Nexus",
+      "score": 0.5248876909254268,
+      "type": "creator"
+    },
+    {
+      "node": "Linus Tech Tips",
+      "score": 0.3622641509433962,
+      "type": "creator"
+    },
+    {
+      "node": "Nvidia",
+      "score": 0.2742138364779874,
+      "type": "brand"
+    },
+    {
+      "node": "Marques Brownlee",
+      "score": 0.2463611859838275,
+      "type": "creator"
+    },
+    {
+      "node": "Hardware Unboxed",
+      "score": 0.20934411500449235,
+      "type": "creator"
+    },
+    {
+      "node": "JayzTwoCents",
+      "score": 0.20754716981132076,
+      "type": "creator"
+    },
+    {
+      "node": "AMD",
+      "score": 0.15920934411500448,
+      "type": "brand"
+    },
+    {
+      "node": "Sony",
+      "score": 0.09146451033243486,
+      "type": "brand"
+    },
+    {
+      "node": "Google",
+      "score": 0.06810422282120396,
+      "type": "brand"
+    },
+    {
+      "node": "Samsung",
+      "score": 0.04330637915543576,
+      "type": "brand"
+    }
+  ],
+  "top_pagerank_nodes": [
+    {
+      "node": "Google",
+      "score": 0.015693431507216103,
+      "type": "brand"
+    },
+    {
+      "node": "Nvidia",
+      "score": 0.015529886766926492,
+      "type": "brand"
+    },
+    {
+      "node": "Samsung",
+      "score": 0.014014924013850252,
+      "type": "brand"
+    },
+    {
+      "node": "Apple",
+      "score": 0.012685218382533382,
+      "type": "brand"
+    },
+    {
+      "node": "AMD",
+      "score": 0.01250739551743222,
+      "type": "brand"
+    },
+    {
+      "node": "Microsoft",
+      "score": 0.011755682266127084,
+      "type": "brand"
+    },
+    {
+      "node": "Sony",
+      "score": 0.010454727079997696,
+      "type": "brand"
+    },
+    {
+      "node": "Oppo",
+      "score": 0.010150435091763391,
+      "type": "brand"
+    },
+    {
+      "node": "ASUS",
+      "score": 0.010063152525007819,
+      "type": "brand"
+    },
+    {
+      "node": "Micro Center",
+      "score": 0.009760307816589223,
+      "type": "brand"
+    }
+  ],
+  "node_level_metrics": {
+    "JayzTwoCents": {
+      "node_type": "creator",
+      "unweighted_degree": 0.16037735849056603,
+      "weighted_degree": 3700310.0,
+      "in_degree_weight": 0.0,
+      "out_degree_weight": 3700310.0,
+      "eigenvector": 0.00047159163000749153,
+      "betweenness": 0.20754716981132076,
+      "pagerank": 0.00885347969631801,
+      "closeness": 0.0
+    },
+    "Micro Center": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 445897.0,
+      "in_degree_weight": 445897.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.763263895897192e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009760307816589223,
+      "closeness": 0.06272862783416329
+    },
+    "Apple": {
+      "node_type": "brand",
+      "unweighted_degree": 0.03773584905660377,
+      "weighted_degree": 105648109.0,
+      "in_degree_weight": 105648109.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.6162127165555559,
+      "betweenness": 0.04168912848158131,
+      "pagerank": 0.012685218382533382,
+      "closeness": 0.2626488576334808
+    },
+    "MSI": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 267537.0,
+      "in_degree_weight": 267537.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.0579535922348368e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009397574128020846,
+      "closeness": 0.06063569672492293
+    },
+    "PowerSpec": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 445897.0,
+      "in_degree_weight": 445897.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.763263895897192e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009760307816589223,
+      "closeness": 0.06272862783416329
+    },
+    "Chromebook": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 89179.0,
+      "in_degree_weight": 89179.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 3.526511974115624e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.009034844506885622,
+      "closeness": 0.05613455281247328
+    },
+    "Fusion 360": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 89179.0,
+      "in_degree_weight": 89179.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 3.526511974115624e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.009034844506885622,
+      "closeness": 0.05613455281247328
+    },
+    "AMD": {
+      "node_type": "brand",
+      "unweighted_degree": 0.04716981132075471,
+      "weighted_degree": 3110734.0,
+      "in_degree_weight": 3110734.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.00012563467224390408,
+      "betweenness": 0.15920934411500448,
+      "pagerank": 0.01250739551743222,
+      "closeness": 0.31647935888229084
+    },
+    "Microsoft": {
+      "node_type": "brand",
+      "unweighted_degree": 0.05660377358490566,
+      "weighted_degree": 3644027.0,
+      "in_degree_weight": 3644027.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.013615324196755294,
+      "betweenness": 0.005750224618149146,
+      "pagerank": 0.011755682266127084,
+      "closeness": 0.36747491051484615
+    },
+    "HP": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 445895.0,
+      "in_degree_weight": 445895.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.763255987058328e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.00976030374915607,
+      "closeness": 0.06272860945715271
+    },
+    "ASUS": {
+      "node_type": "brand",
+      "unweighted_degree": 0.03773584905660377,
+      "weighted_degree": 726363.0,
+      "in_degree_weight": 726363.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.8709616365962846e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.010063152525007819,
+      "closeness": 0.23432634225874008
+    },
+    "Dell": {
+      "node_type": "brand",
+      "unweighted_degree": 0.018867924528301886,
+      "weighted_degree": 258279.0,
+      "in_degree_weight": 258279.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.731531209663343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.009325953590232477,
+      "closeness": 0.11456559558005829
+    },
+    "Alienware": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 89179.0,
+      "in_degree_weight": 89179.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 3.526511974115624e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.009034844506885622,
+      "closeness": 0.05613455281247328
+    },
+    "Intel": {
+      "node_type": "brand",
+      "unweighted_degree": 0.02830188679245283,
+      "weighted_degree": 912863.0,
+      "in_degree_weight": 912863.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.47669051968514e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.009583837773911304,
+      "closeness": 0.18269772205628096
+    },
+    "Gamers Nexus": {
+      "node_type": "creator",
+      "unweighted_degree": 0.3962264150943396,
+      "weighted_degree": 11282736.0,
+      "in_degree_weight": 0.0,
+      "out_degree_weight": 11282736.0,
+      "eigenvector": 0.0004899916356660194,
+      "betweenness": 0.5248876909254268,
+      "pagerank": 0.00885347969631801,
+      "closeness": 0.0
+    },
+    "Bloomberg": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 809172.0,
+      "in_degree_weight": 809172.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 3.3246519679951706e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009393182852504008,
+      "closeness": 0.06517019666366082
+    },
+    "Sony": {
+      "node_type": "brand",
+      "unweighted_degree": 0.03773584905660377,
+      "weighted_degree": 4408991.0,
+      "in_degree_weight": 4408991.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.015646119457345422,
+      "betweenness": 0.09146451033243486,
+      "pagerank": 0.010454727079997696,
+      "closeness": 0.2549985126551821
+    },
+    "Rockstar": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 118576.0,
+      "in_degree_weight": 118576.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.87194232816991e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008932567753551715,
+      "closeness": 0.05730185656530841
+    },
+    "Nintendo": {
+      "node_type": "brand",
+      "unweighted_degree": 0.018867924528301886,
+      "weighted_degree": 922801.0,
+      "in_degree_weight": 922801.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.483525619953192e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.009346698194815595,
+      "closeness": 0.12534434108503417
+    },
+    "EVGA": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 404586.0,
+      "in_degree_weight": 404586.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.6623259839975853e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.00912333127441101,
+      "closeness": 0.062330291044189294
+    },
+    "Of Mice & Men": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 296441.0,
+      "in_degree_weight": 296441.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.217989690751625e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009051200506384267,
+      "closeness": 0.0610560214115622
+    },
+    "Nero": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 296441.0,
+      "in_degree_weight": 296441.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.217989690751625e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009051200506384267,
+      "closeness": 0.0610560214115622
+    },
+    "Verbatim": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 296441.0,
+      "in_degree_weight": 296441.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.217989690751625e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009051200506384267,
+      "closeness": 0.0610560214115622
+    },
+    "CMC Pro": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 296441.0,
+      "in_degree_weight": 296441.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.217989690751625e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009051200506384267,
+      "closeness": 0.0610560214115622
+    },
+    "Marques Brownlee": {
+      "node_type": "creator",
+      "unweighted_degree": 0.16981132075471697,
+      "weighted_degree": 249096110.0,
+      "in_degree_weight": 0.0,
+      "out_degree_weight": 249096110.0,
+      "eigenvector": 0.7063157612295481,
+      "betweenness": 0.2463611859838275,
+      "pagerank": 0.00885347969631801,
+      "closeness": 0.0
+    },
+    "Corning": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 1913271.0,
+      "in_degree_weight": 1913271.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.011331621573761955,
+      "betweenness": 0.0,
+      "pagerank": 0.008911281059546396,
+      "closeness": 0.06869600461160093
+    },
+    "Paul's Hardware": {
+      "node_type": "creator",
+      "unweighted_degree": 0.08490566037735849,
+      "weighted_degree": 1835345.0,
+      "in_degree_weight": 0.0,
+      "out_degree_weight": 1835345.0,
+      "eigenvector": 0.00011114469112207529,
+      "betweenness": 0.019047619047619046,
+      "pagerank": 0.00885347969631801,
+      "closeness": 0.0
+    },
+    "Nvidia": {
+      "node_type": "brand",
+      "unweighted_degree": 0.03773584905660377,
+      "weighted_degree": 5630705.0,
+      "in_degree_weight": 5630705.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.00043910064142498853,
+      "betweenness": 0.2742138364779874,
+      "pagerank": 0.015529886766926492,
+      "closeness": 0.264643972806425
+    },
+    "Lexar": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 132997.0,
+      "in_degree_weight": 132997.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.2395020352660548e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.009398801257790183,
+      "closeness": 0.057772092874910065
+    },
+    "SK Hynix": {
+      "node_type": "brand",
+      "unweighted_degree": 0.018867924528301886,
+      "weighted_degree": 174643.0,
+      "in_degree_weight": 174643.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 5.063109290209396e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.009198269194953536,
+      "closeness": 0.11182125562441589
+    },
+    "Micron": {
+      "node_type": "brand",
+      "unweighted_degree": 0.02830188679245283,
+      "weighted_degree": 464691.0,
+      "in_degree_weight": 464691.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 2.4156380632169006e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.009353072997241571,
+      "closeness": 0.1723965821559683
+    },
+    "Samsung": {
+      "node_type": "brand",
+      "unweighted_degree": 0.05660377358490566,
+      "weighted_degree": 19200339.0,
+      "in_degree_weight": 19200339.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.05530553224969267,
+      "betweenness": 0.04330637915543576,
+      "pagerank": 0.014014924013850252,
+      "closeness": 0.37868940797624173
+    },
+    "Oppo": {
+      "node_type": "brand",
+      "unweighted_degree": 0.018867924528301886,
+      "weighted_degree": 31254460.0,
+      "in_degree_weight": 31254460.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.18028211252786966,
+      "betweenness": 0.0,
+      "pagerank": 0.010150435091763391,
+      "closeness": 0.14386301811475655
+    },
+    "Qualcomm": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 5629143.0,
+      "in_degree_weight": 5629143.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.0333394057927973,
+      "betweenness": 0.0,
+      "pagerank": 0.009023540361643273,
+      "closeness": 0.07311738001325742
+    },
+    "HTC": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 1051435.0,
+      "in_degree_weight": 1051435.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.006227274405668827,
+      "betweenness": 0.0,
+      "pagerank": 0.008885244342489952,
+      "closeness": 0.06624323046837957
+    },
+    "Google": {
+      "node_type": "brand",
+      "unweighted_degree": 0.03773584905660377,
+      "weighted_degree": 58148016.0,
+      "in_degree_weight": 58148016.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.25715986605492136,
+      "betweenness": 0.06810422282120396,
+      "pagerank": 0.015693431507216103,
+      "closeness": 0.2818239359244651
+    },
+    "Hasselblad": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 7885761.0,
+      "in_degree_weight": 7885761.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.046704549158551316,
+      "betweenness": 0.0,
+      "pagerank": 0.009091714497291447,
+      "closeness": 0.07449852462669876
+    },
+    "Stuff Made Here": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 2628587.0,
+      "in_degree_weight": 2628587.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.015568183052850435,
+      "betweenness": 0.0,
+      "pagerank": 0.00893289129664249,
+      "closeness": 0.0699973807142491
+    },
+    "Vivo": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 5257174.0,
+      "in_degree_weight": 5257174.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.03113636610570087,
+      "betweenness": 0.0,
+      "pagerank": 0.009012302896966968,
+      "closeness": 0.07283728633372064
+    },
+    "Zeiss": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 2628587.0,
+      "in_degree_weight": 2628587.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.015568183052850435,
+      "betweenness": 0.0,
+      "pagerank": 0.00893289129664249,
+      "closeness": 0.0699973807142491
+    },
+    "Auto Focus": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 5257175.0,
+      "in_degree_weight": 5257175.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.031136372028344118,
+      "betweenness": 0.0,
+      "pagerank": 0.009012302927177723,
+      "closeness": 0.072837287113059
+    },
+    "Linus Tech Tips": {
+      "node_type": "creator",
+      "unweighted_degree": 0.29245283018867924,
+      "weighted_degree": 25392163.0,
+      "in_degree_weight": 0.0,
+      "out_degree_weight": 25392163.0,
+      "eigenvector": 0.026170391806762186,
+      "betweenness": 0.3622641509433962,
+      "pagerank": 0.00885347969631801,
+      "closeness": 0.0
+    },
+    "Valve": {
+      "node_type": "brand",
+      "unweighted_degree": 0.018867924528301886,
+      "weighted_degree": 377824.0,
+      "in_degree_weight": 377824.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.243994684262792e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.009017037775962964,
+      "closeness": 0.11453979086305217
+    },
+    "Ugreen": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 1979514.0,
+      "in_degree_weight": 1979514.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.00043439566090818014,
+      "betweenness": 0.0,
+      "pagerank": 0.009440140966508434,
+      "closeness": 0.06883545827945348
+    },
+    "Naughty Dog": {
+      "node_type": "brand",
+      "unweighted_degree": 0.018867924528301886,
+      "weighted_degree": 377824.0,
+      "in_degree_weight": 377824.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.243994684262792e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.009017037775962964,
+      "closeness": 0.11453979086305217
+    },
+    "Game Science": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 329919.0,
+      "in_degree_weight": 329919.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.239927681803007e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008951256574683082,
+      "closeness": 0.06149440874753231
+    },
+    "Bethesda Softworks": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 659838.0,
+      "in_degree_weight": 659838.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.00014479855363606014,
+      "betweenness": 0.0,
+      "pagerank": 0.00904903345304815,
+      "closeness": 0.06433431436700382
+    },
+    "Epic Games": {
+      "node_type": "brand",
+      "unweighted_degree": 0.018867924528301886,
+      "weighted_degree": 1037662.0,
+      "in_degree_weight": 1037662.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.00021723850047868803,
+      "betweenness": 0.0,
+      "pagerank": 0.009212591532693106,
+      "closeness": 0.11829679766235794
+    },
+    "Mojang Studios": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 329919.0,
+      "in_degree_weight": 329919.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.239927681803007e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008951256574683082,
+      "closeness": 0.06149440874753231
+    },
+    "LTT Labs": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 329919.0,
+      "in_degree_weight": 329919.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.239927681803007e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008951256574683082,
+      "closeness": 0.06149440874753231
+    },
+    "eBay": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 329919.0,
+      "in_degree_weight": 329919.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.239927681803007e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008951256574683082,
+      "closeness": 0.06149440874753231
+    },
+    "Facebook": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 329919.0,
+      "in_degree_weight": 329919.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.239927681803007e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008951256574683082,
+      "closeness": 0.06149440874753231
+    },
+    "Hardware Unboxed": {
+      "node_type": "creator",
+      "unweighted_degree": 0.18867924528301885,
+      "weighted_degree": 5480341.0,
+      "in_degree_weight": 0.0,
+      "out_degree_weight": 5480341.0,
+      "eigenvector": 0.00010124577622291237,
+      "betweenness": 0.20934411500449235,
+      "pagerank": 0.00885347969631801,
+      "closeness": 0.0
+    },
+    "Thermal Grizzly": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 383244.0,
+      "in_degree_weight": 383244.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 3.253635926727487e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.009379734799194702,
+      "closeness": 0.06210825815417319
+    },
+    "Sapphire": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 239525.0,
+      "in_degree_weight": 239525.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 2.0335012298920515e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.00918238570271743,
+      "closeness": 0.06018255517771628
+    },
+    "PowerColor": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 47905.0,
+      "in_degree_weight": 47905.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.0670024597759516e-08,
+      "betweenness": 0.0,
+      "pagerank": 0.008919260897597894,
+      "closeness": 0.053588498533036856
+    },
+    "Patreon": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 95810.0,
+      "in_degree_weight": 95810.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 8.134004919551903e-08,
+      "betweenness": 0.0,
+      "pagerank": 0.00898504209887778,
+      "closeness": 0.056428404152508375
+    },
+    "Marvel": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 95810.0,
+      "in_degree_weight": 95810.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 8.134004919551903e-08,
+      "betweenness": 0.0,
+      "pagerank": 0.00898504209887778,
+      "closeness": 0.056428404152508375
+    },
+    "Lego": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 47905.0,
+      "in_degree_weight": 47905.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.0670024597759516e-08,
+      "betweenness": 0.0,
+      "pagerank": 0.008919260897597894,
+      "closeness": 0.053588498533036856
+    },
+    "007": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 95810.0,
+      "in_degree_weight": 95810.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 8.134004919551903e-08,
+      "betweenness": 0.0,
+      "pagerank": 0.00898504209887778,
+      "closeness": 0.056428404152508375
+    },
+    "Pearl Abyss": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 47905.0,
+      "in_degree_weight": 47905.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.0670024597759516e-08,
+      "betweenness": 0.0,
+      "pagerank": 0.008919260897597894,
+      "closeness": 0.053588498533036856
+    },
+    "Embark Studios": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 47905.0,
+      "in_degree_weight": 47905.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.0670024597759516e-08,
+      "betweenness": 0.0,
+      "pagerank": 0.008919260897597894,
+      "closeness": 0.053588498533036856
+    },
+    "OpenAI": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 324435.0,
+      "in_degree_weight": 324435.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.3330088797392121e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009069872000398237,
+      "closeness": 0.06142573301595466
+    },
+    "Anthropic": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 216290.0,
+      "in_degree_weight": 216290.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 8.886725864934686e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008997741232371494,
+      "closeness": 0.05976449472297654
+    },
+    "Wall Street Journal": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "SoftBank": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 216290.0,
+      "in_degree_weight": 216290.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 8.886725864934686e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008997741232371494,
+      "closeness": 0.05976449472297654
+    },
+    "Naver": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "Safe Super Intelligence": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "Volulta": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "Broadcom": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "CNBC": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "Marvell Technology": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "Core Scientific": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "Coreweave": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "SK Group": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 108145.0,
+      "in_degree_weight": 108145.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.443362932467343e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008925610464344752,
+      "closeness": 0.05692458910350502
+    },
+    "Be Quiet": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 336622.0,
+      "in_degree_weight": 336622.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.3311446795221584e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009538073437702087,
+      "closeness": 0.06157681599974035
+    },
+    "PixArt": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 168311.0,
+      "in_degree_weight": 168311.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.655723397610792e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.00919577656701005,
+      "closeness": 0.05873691038026883
+    },
+    "Omron": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 168311.0,
+      "in_degree_weight": 168311.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.655723397610792e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.00919577656701005,
+      "closeness": 0.05873691038026883
+    },
+    "Arctic Silver": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 84155.0,
+      "in_degree_weight": 84155.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 3.327841926706404e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.009024627114805742,
+      "closeness": 0.055896980418182
+    },
+    "Snazzy Quinn": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 4572579.0,
+      "in_degree_weight": 4572579.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.02708175414989871,
+      "betweenness": 0.0,
+      "pagerank": 0.008991620764504115,
+      "closeness": 0.07226567186298626
+    },
+    "Squarespace": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 1282312.0,
+      "in_degree_weight": 1282312.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.00028139774143072006,
+      "betweenness": 0.0,
+      "pagerank": 0.009233513778774826,
+      "closeness": 0.06705654440053198
+    },
+    "WhatsApp": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 320578.0,
+      "in_degree_weight": 320578.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.034943535768001e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008948488216932214,
+      "closeness": 0.06137673316158893
+    },
+    "dbrand": {
+      "node_type": "brand",
+      "unweighted_degree": 0.018867924528301886,
+      "weighted_degree": 18323914.0,
+      "in_degree_weight": 18323914.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.10669768587503889,
+      "betweenness": 0.0,
+      "pagerank": 0.00949238260693692,
+      "closeness": 0.1373014717915554
+    },
+    "JerryRigEverything": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 320578.0,
+      "in_degree_weight": 320578.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.034943535768001e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008948488216932214,
+      "closeness": 0.06137673316158893
+    },
+    "Motorola": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 320578.0,
+      "in_degree_weight": 320578.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 7.034943535768001e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008948488216932214,
+      "closeness": 0.06137673316158893
+    },
+    "Dave2D": {
+      "node_type": "creator",
+      "unweighted_degree": 0.03773584905660377,
+      "weighted_degree": 16712956.0,
+      "in_degree_weight": 0.0,
+      "out_degree_weight": 16712956.0,
+      "eigenvector": 0.02080074366667816,
+      "betweenness": 0.0,
+      "pagerank": 0.00885347969631801,
+      "closeness": 0.0
+    },
+    "Hetzner": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 1668712.0,
+      "in_degree_weight": 1668712.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.0003661915258520077,
+      "betweenness": 0.0,
+      "pagerank": 0.009348029722992235,
+      "closeness": 0.0681356734815453
+    },
+    "Ampere": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 104294.0,
+      "in_degree_weight": 104294.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 2.2886860642944573e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008884388924801992,
+      "closeness": 0.05677603136155164
+    },
+    "FSP": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 104294.0,
+      "in_degree_weight": 104294.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 2.2886860642944573e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008884388924801992,
+      "closeness": 0.05677603136155164
+    },
+    "Cooltra": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 104294.0,
+      "in_degree_weight": 104294.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 2.2886860642944573e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008884388924801992,
+      "closeness": 0.05677603136155164
+    },
+    "LTT": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 208589.0,
+      "in_degree_weight": 208589.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 4.577394073150096e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.00891529844965229,
+      "closeness": 0.05961595662313074
+    },
+    "Wera": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 104294.0,
+      "in_degree_weight": 104294.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 2.2886860642944573e-05,
+      "betweenness": 0.0,
+      "pagerank": 0.008884388924801992,
+      "closeness": 0.05677603136155164
+    },
+    "Nothing": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 1500278.0,
+      "in_degree_weight": 1500278.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.008885611369973432,
+      "betweenness": 0.0,
+      "pagerank": 0.008898804228818403,
+      "closeness": 0.06769973340416899
+    },
+    "Best Buy": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 1500278.0,
+      "in_degree_weight": 1500278.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 0.008885611369973432,
+      "betweenness": 0.0,
+      "pagerank": 0.008898804228818403,
+      "closeness": 0.06769973340416899
+    },
+    "Montek": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 309592.0,
+      "in_degree_weight": 309592.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.2720233177566186e-06,
+      "betweenness": 0.0,
+      "pagerank": 0.009059971986622093,
+      "closeness": 0.06123386537534178
+    },
+    "Flock Cameras": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 61918.0,
+      "in_degree_weight": 61918.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 2.5440302006787455e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008894777887586029,
+      "closeness": 0.054639782262723986
+    },
+    "Eventbrite": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 154796.0,
+      "in_degree_weight": 154796.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.360116588783292e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008956725841470052,
+      "closeness": 0.05839395975587025
+    },
+    "Level One Tech": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 154796.0,
+      "in_degree_weight": 154796.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.360116588783292e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008956725841470052,
+      "closeness": 0.05839395975587025
+    },
+    "Grand Strand Brewing Company": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 154796.0,
+      "in_degree_weight": 154796.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.360116588783292e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008956725841470052,
+      "closeness": 0.05839395975587025
+    },
+    "NPR": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 154796.0,
+      "in_degree_weight": 154796.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.360116588783292e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008956725841470052,
+      "closeness": 0.05839395975587025
+    },
+    "Wikipedia": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 154796.0,
+      "in_degree_weight": 154796.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.360116588783292e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008956725841470052,
+      "closeness": 0.05839395975587025
+    },
+    "Reddit": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 154796.0,
+      "in_degree_weight": 154796.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.360116588783292e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008956725841470052,
+      "closeness": 0.05839395975587025
+    },
+    "Twitter": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 154796.0,
+      "in_degree_weight": 154796.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.360116588783292e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008956725841470052,
+      "closeness": 0.05839395975587025
+    },
+    "PayPal": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 154796.0,
+      "in_degree_weight": 154796.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.360116588783292e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008956725841470052,
+      "closeness": 0.05839395975587025
+    },
+    "Venmo": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 154796.0,
+      "in_degree_weight": 154796.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.360116588781124e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.008956725841470052,
+      "closeness": 0.05839395975587025
+    },
+    "Engadget": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 79921.0,
+      "in_degree_weight": 79921.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 6.785072614325614e-08,
+      "betweenness": 0.0,
+      "pagerank": 0.008963223969097253,
+      "closeness": 0.05568548027640629
+    },
+    "LG": {
+      "node_type": "brand",
+      "unweighted_degree": 0.009433962264150943,
+      "weighted_degree": 159842.0,
+      "in_degree_weight": 159842.0,
+      "out_degree_weight": 0.0,
+      "eigenvector": 1.3570145228651229e-07,
+      "betweenness": 0.0,
+      "pagerank": 0.009072968241876495,
+      "closeness": 0.05852538589587782
+    }
+  }
+}
